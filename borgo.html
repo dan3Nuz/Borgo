@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset=utf-8>
+    	<title>Borgo</title>
+
+		<!-- Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+		<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+		<!-- fine Bootstrap -->
+
+		<link rel='stylesheet' type='text/css' href='./css/style.css'>
+      	<link rel="website icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Hallstatt_Coat_of_Arms.svg/1200px-Hallstatt_Coat_of_Arms.svg.png">
+		<link rel="stylesheet" href="./css/borgoStyle.css">
+		<script defer src="./js/scriptBorgo.js"></script>
+		<style>
+			#s1{
+				background-image: url("images/autunno.jpg");
+			}
+			#s2{
+				background-image: url("images/centro.jpg");
+			}
+			#s3{
+				background-image: url("images/miniera.jpg");
+			}
+			#s4{
+				background-image: url("images/sfondo.jpg");
+			}
+			#s5{
+				background-image: url("images/catena.jpg");
+			}
+			#s6{
+				background-image: url("images/grotta.jpg");
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark p-2 fixed-top" id="mainNav">
+			<div class="container-fluid" id="contNav">
+			  <a href="index.html" class="navbar-brand" id="titoloContainer">
+				<p id="titolo" class="display-4 text-left text-white">HALLSTATT</p>
+			  </a>
+	  
+			  <!-- Menù per display piccoli -->
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon p-3" id="icona"></span>
+			  </button>
+			  <!-- Fine menù -->
+	  
+			  <div class=" collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav mb-2 mb-lg-0">
+				  <li class="nav-item" id="nav1" onmouseover="sottolineaOn('nav1')" onmouseout="sottolineaOff('nav1')">
+					<a class="nav-link mx-2" href="index.html">Home</a>
+				  </li>
+				  <li class="nav-item" id="nav2" onmouseover="sottolineaOn('nav2')" onmouseout="sottolineaOff('nav2')">
+					<a class="nav-link mx-2 active" href="#">Borgo</a>
+				  </li>
+				  <li class="nav-item" id="nav3" onmouseover="sottolineaOn('nav3')" onmouseout="sottolineaOff('nav3')">
+					<a class="nav-link mx-2" href="galleria.html">Galleria</a>
+				  </li>
+				  <li class="nav-item" id="nav4" onmouseover="sottolineaOn('nav4')" onmouseout="sottolineaOff('nav4')">
+					<a class="nav-link mx-2" href="viaggi.html">Viaggi</a>
+				  </li>
+				  <li class="nav-item" id="nav5" onmouseover="sottolineaOn('nav5')" onmouseout="sottolineaOff('nav5')">
+					<a class="nav-link mx-2" href="contatti.html">Contatti</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		</nav>
+		<!-- Fine Navbar -->
+
+		<div id="pallini">
+			<ul style="list-style-type: none; padding: 5px; margin-bottom: -4px;">
+				<li>
+					<a href="#s1" data-bs-toggle="tooltip" data-bs-placement="left" title="Hallstatt">
+						<span id="p1" class="bi bi-circle-fill palliniLink rimpicciolisci"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#s2" data-bs-toggle="tooltip" data-bs-placement="left" title="Centro Hallstatt">
+						<span id="p2" class="bi bi-circle-fill palliniLink rimpicciolisci"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#s3" data-bs-toggle="tooltip" data-bs-placement="left" title="Miniere di sale di Hallstatt e Salzwelten">
+						<span id="p3" class="bi bi-circle-fill palliniLink rimpicciolisci"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#s4" data-bs-toggle="tooltip" data-bs-placement="left" title="Lago di Hallstatt">
+						<span id="p4" class="bi bi-circle-fill palliniLink rimpicciolisci"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#s5" data-bs-toggle="tooltip" data-bs-placement="left" title="Dachstein Salzkammergut">
+						<span id="p5" class="bi bi-circle-fill palliniLink rimpicciolisci"></span>
+					</a>
+				</li>
+				<li>
+					<a href="#s6" data-bs-toggle="tooltip" data-bs-placement="left" title="Grotte del Dachstein">
+						<span id="p6" class="bi bi-circle-fill palliniLink rimpicciolisci"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<section id="s1">
+			<div class="container descrizione">
+				<h1 class="display-2">Hallstatt</h1><hr><br>
+				<p class="h5">Se c’è un paese che incarna al meglio l’Austria, questo è Hallstatt. Questa località dell’Alta Austria, abitata da meno di 800 persone, si trova adagiata sulle sponde di un lago, sorge a fianco di montagne innevate e foreste, e le case hanno una deliziosa architettura alpina.<br>Infatti è una delle destinazioni turistiche più famose del paese e l’UNESCO l’ha inserita nella lista dei patrimoni dell’umanità, con denominazione ufficiale “Hallstatt-Dachstein".</p><br>
+				<p class="h4">Ma cosa si può visitare ad Hallstatt? Scopriamolo!</p>
+			</div>
+		</section>
+		<section id="s2">
+			<div class="container descrizione">
+				<h1 class="display-2">Centro Hallstatt</h1><hr><br>
+				<p class="h5">La prima cosa da vedere ad Hallstatt è … Hallstatt! <br> Essendo un piccolo villaggio, non ha molto senso parlare di centro storico e di periferia, pertanto perdetevi nelle sue viuzze, visitate la piazza centrale Markplatz e camminate sul lungolago. <br> Fermatevi ad ammirare le tipiche case in stile alpino, coi balconi traboccanti di fiori, ed entrate nei negozi di prodotti tipici locali e souvenir.</p>
+			</div>
+		</section>
+		<section id="s3">
+			<div class="container descrizione">
+				<h1 class="display-2">Miniere di sale di Hallstatt e Salzwelten</h1><hr><br>
+				<p class="h5">Il Salzwelten, ossia “il mondo del sale”, è un complesso di attrazioni turistiche situato ad un’altitudine di oltre 1000 metri, a poca distanza da Hallstatt. <br> L’attrazione principale del Salzwelten è la miniera di sale di Hallstatt, dove i depositi della preziosa sostanza risalgono a ben 7000 anni fa. Il percorso guidato vi introdurrà attraverso il mondo del sale, dandovi la possibilità di osservare il corpo trovato qui nel 1734, noto come “l’uomo di sale”, e di conoscere una serie di informazioni relative all’estrazione del sale durante la storia della miniera.</p>
+			</div>
+		</section>
+		<section id="s4">
+			<div class="container descrizione">
+				<h1 class="display-2">Lago di Hallstatt</h1><hr><br>
+				<p class="h5">Il lago di Hallstatt, o Hallstätter See in tedesco, è il lago su cui si affaccia la cittadina. Lungo circa 8,5 chilometri e largo non più di due, il lago è profondo fino a 125 metri ed è circondato da foreste e montagne, tanto da ricordare un paesaggio dei fiordi norvegesi. <br> Gli amanti della vita all’aria aperta e dello sport potranno poi sfruttare il lago di Hallstatt per la pesca, le gite in barca o il nuoto.</p>
+			</div>
+		</section>
+		<section id="s5">
+			<div class="container descrizione">
+				<h1 class="display-2">Dachstein Salzkammergut</h1><hr><br>
+				<p class="h5">Il Dachstein Salzkammergut, facente parte assieme ad Hallstatt della lista UNESCO dei patrimoni dell’umanità, consiste in una serie di vette alpine con altitudini che vanno da 2000 a quasi 3000 metri. Di queste, il più alto è l’Hoher Dachstein4, con 2995 metri. D’inverno è una nota destinazione per lo sci, mentre d’estate il turismo è a base di passeggiate e camminate in quota. <br> Ci sono anche dei ghiacciai, come il Grosse-Gosau e l’Hallstätter, mentre per chi non ha troppa voglia di faticare ci sono a disposizione diverse funivie che arrivano direttamente in quota, per ammirare favolosi panorami, spesso da piattaforme appositamente costruite.</p>
+			</div>
+		</section>
+		<section id="s6" style="height: 87vh;">
+			<div class="container descrizione">
+				<h1 class="display-2">Grotte del Dachstein</h1><hr><br>
+				<p class="h5">Le montagne che circondano Hallstatt sono famose anche per le Dachsteinhöhlen, ossia le grotte ghiacciate del Dachstein, una rete di caverne profonde fino a 1200 metri. Troverete un mondo sotterraneo fatto di sculture di ghiaccio, enormi ghiaccioli e cascate ghiacciate. <br> Da non perdere la Mammuthöhle, la “grotta del mammut”, una serie di gallerie formate da un antico fiume che scorreva sottoterra. E’ possibile visitare le grotte del Dachstein tramite un tour guidato della durata di 90 minuti, in cui imparerete a conoscere più da vicino gli effetti del cambiamento climatico e una serie di interessanti esposizioni geologiche.</p>
+			</div>
+		</section>
+		<!-- Footer -->
+		<footer class="text-center">
+			<div class="container">
+				<a class="btn btn-link btn-lg" href="https://www.facebook.com/hallstattinfo/" target="_blank"><i class="bi bi-facebook"></i></a>
+				<a class="btn btn-link btn-lg" href="https://twitter.com/visithallstatt" target="_blank"><i class="bi bi-twitter"></i></a>
+				<a class="btn btn-link btn-lg" href="https://www.google.com/search?q=hallstatt" target="_blank"><i class="bi bi-google"></i></a>
+				<a class="btn btn-link btn-lg" href="https://www.instagram.com/visithallstatt/" target="_blank"><i class="bi bi-instagram"></i></a>
+			</div>
+			<hr class="fineFooter">
+			<div class="text-center text-white p-1">
+			<p class="h6" style="font-weight: 300;">© Daniele Nuzzaci 2022</p>
+			</div>
+		</footer>
+		<!-- Fine footer -->
+	</body>
+</html>

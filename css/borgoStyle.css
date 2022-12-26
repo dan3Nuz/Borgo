@@ -1,0 +1,47 @@
+html {
+	scroll-snap-type: y mandatory;
+}
+section{
+	background-repeat: no-repeat;
+	background-size:cover; 
+	background-position: top center;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
+	display: flex;
+	align-items: center;
+}
+.descrizione{
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 3vw;
+	border-radius: 10px;	
+}
+hr{
+	border: 3px solid rgb(33, 37, 41);
+}
+::-webkit-scrollbar {
+	  width: 0px;
+}
+#pallini{
+	position: fixed;
+	margin-top: 50vh;
+	margin-bottom: 50vh;
+	right: 0.5rem;
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 15px;
+	font-size: 1rem;
+}
+.palliniLink{
+	text-decoration: none;
+	color: rgb(33, 37, 41);
+}
+.ingrandisci{
+	font-size: 1.5rem;
+	transition: 500ms linear;
+}
+.rimpicciolisci{
+	font-size: 1rem;
+	transition: 500ms linear;
+}
