@@ -1,0 +1,145 @@
+<!Doctype html>
+<html lang="it">
+   <head>
+      <meta charset=utf-8>
+      <title>HALLSTATT</title>
+
+      <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+      <!-- fine Bootstrap -->
+
+      <link rel='stylesheet' type='text/css' href='./css/style.css'>
+      <link rel="website icon" href="./images/logo.png">
+
+      <style>
+        body{
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(40, 40, 40, 0.6)), url("./images/sfondo.jpg");
+          background-repeat: no-repeat;
+          background-size:cover; 
+          background-position: top center;
+        }
+        .carta{
+          margin: auto;
+          padding-top: 4vh;
+          padding-bottom: 4vh;
+          text-align: center;
+        }
+        .tabOn, h1.tabOn{
+          background-color: rgb(33, 37, 41);
+          transition : background 350ms linear;
+          color: white;
+        }
+        .tabOff{
+          background-color: white;
+          transition : background 300ms linear;
+        }
+        @media screen and (max-width: 991px){
+          .navbar-toggler{
+            margin-top: 30px;
+            margin-right: 30px;
+          }
+          h5{
+            font-size: 3vh;
+          }
+          h1{
+            font-size: 4vh;
+          }
+          #titolo{
+            font-size: 7vh;
+          }
+        }
+        </style>
+      
+   </head>
+   <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark p-2 fixed-top" id="mainNav">
+      <div class="container-fluid" id="contNav">
+        <a href="#" class="navbar-brand" id="titoloContainer">
+          <p id="titolo" class="display-4 text-left text-white">HALLSTATT</p>
+        </a>
+
+        <!-- Menù per display piccoli -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon p-3" id="icona"></span>
+        </button>
+        <!-- Fine menù -->
+
+        <div class=" collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link mx-2 active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="borgo.html">Borgo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="galleria.html">Galleria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="viaggi.html">Viaggi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="contatti.html">Contatti</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Fine Navbar -->
+
+    <div class="vh-100"></div>
+
+    <!-- Tabella -->
+    <div class="container" style="transform: translateY(-5vh);">
+      <div class="row">
+        <div class="col-lg-3 mt-3" onmouseover="tabOn(this)" onmouseout="tabOff(this)">
+          <a href="borgo.html"><div id="t1" class="card carta" onmouseover="tabOn('t1')" onmouseout="tabOff('t1')">
+            <h1 class="mt-3">Borgo</h1>
+            <h5 class="mt-3 mb-4">Hallstatt è un villaggio sulla sponda occidentale...</h5>
+          </div></a>
+        </div>
+        <div class="col-lg-3 mt-3" onmouseover="tabOn(this)" onmouseout="tabOff(this)">
+          <a href="galleria.html"><div id="t2" class="card carta" onmouseover="tabOn('t2')" onmouseout="tabOff('t2')">
+            <h1 class="mt-3">Galleria</h1>
+            <h5 class="mt-3 mb-4">Foto panoramiche del borgo e delle vicinanze.</h5>
+          </div></a>
+        </div>
+        <div class="col-lg-3 mt-3">
+          <a href="viaggi.html"><div id="t3" class="card carta" onmouseover="tabOn('t3')" onmouseout="tabOff('t3')">
+            <h1 class="mt-3">Viaggi</h1>
+            <h5 class="mt-3 mb-4">Prenota ora una vacanza fantastica e visita Hallstatt!</h5>
+          </div></a>
+        </div>
+        <div class="col-lg-3 mt-3" onmouseover="tabOn()" onmouseout="tabOff()">
+          <a href="contatti.html"><div id="t4" class="card carta" onmouseover="tabOn('t4')" onmouseout="tabOff('t4')">
+            <h1 class="mt-3">Contatti</h1>
+            <h5 class="mt-3 mb-4">Scopri dove siamo e contattaci per informazioni.</h5>
+          </div></a>
+        </div>
+      </div>
+    </div>
+    <!-- Fine tabella -->
+    <br><br><br><br>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <div class="container mb-1">
+        <a class="btn btn-link btn-lg" href="https://www.facebook.com/hallstattinfo/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a class="btn btn-link btn-lg" href="https://twitter.com/visithallstatt" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a class="btn btn-link btn-lg" href="https://www.google.com/search?q=hallstatt" target="_blank"><i class="bi bi-google"></i></a>
+        <a class="btn btn-link btn-lg" href="https://www.instagram.com/visithallstatt/" target="_blank"><i class="bi bi-instagram"></i></a>
+      </div>
+      <hr class="fineFooter">
+      <div class="text-center text-white p-1">
+        <p class="h6" style="font-weight: 300;">© Daniele Nuzzaci 2022</p>
+      </div>
+    </footer>
+    <!-- Fine footer -->
+       
+    <!-- JavaScript -->
+    <script src="./js/scriptHome.js"></script>
+        
+  </body>
+</html>

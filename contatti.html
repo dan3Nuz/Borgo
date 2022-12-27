@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset=utf-8>
+    	<title>Contatti</title>
+
+		<!-- Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+		<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+		<!-- fine Bootstrap -->
+
+		<link rel='stylesheet' type='text/css' href='./css/style.css'>
+      	<link rel="website icon" href="./images/logo.png">
+
+		<style>
+			body{
+				background-color: lightblue;
+			}
+			iframe{
+				width: 100%;
+				height: 500px;
+				border-radius: 7px;
+			}
+			.contatti{
+				text-align: center;
+				padding-bottom: 3px; 
+				border-radius: 10px;
+			}
+			.mostra{
+				transition: 500ms linear;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark p-2 fixed-top" id="mainNav">
+			<div class="container-fluid" id="contNav">
+			  <a href="index.html" class="navbar-brand" id="titoloContainer">
+				<p id="titolo" class="display-4 text-left text-white">HALLSTATT</p>
+			  </a>
+	  
+			  <!-- Menù per display piccoli -->
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon p-3" id="icona"></span>
+			  </button>
+			  <!-- Fine menù -->
+	  
+			  <div class=" collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav mb-2 mb-lg-0" style="padding-left: 5vh; padding-right: 5vh;">
+				  <li class="nav-item" id="nav1" onmouseover="sottolineaOn('nav1')" onmouseout="sottolineaOff('nav1')">
+					<a class="nav-link mx-2" href="index.html">Home</a>
+				  </li>
+				  <li class="nav-item" id="nav2" onmouseover="sottolineaOn('nav2')" onmouseout="sottolineaOff('nav2')">
+					<a class="nav-link mx-2" href="borgo.html">Borgo</a>
+				  </li>
+				  <li class="nav-item" id="nav3" onmouseover="sottolineaOn('nav3')" onmouseout="sottolineaOff('nav3')">
+					<a class="nav-link mx-2" href="galleria.html">Galleria</a>
+				  </li>
+				  <li class="nav-item" id="nav4" onmouseover="sottolineaOn('nav4')" onmouseout="sottolineaOff('nav4')">
+					<a class="nav-link mx-2" href="viaggi.html">Viaggi</a>
+				  </li>
+				  <li class="nav-item" id="nav5" onmouseover="sottolineaOn('nav5')" onmouseout="sottolineaOff('nav5')">
+					<a class="nav-link mx-2 active" href="#">Contatti</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		</nav>
+		<!-- Fine Navbar -->
+		<br><br><br>
+		<h1 class="display-2 text-center mt-5">Ecco i nostri contatti:</h1>
+		<br><hr><br>
+
+		<div class="container bg-dark contatti" style="width: 90vw;">
+			<h1 class="display-4 text-light pt-3">Dove siamo</h1><br>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86198.62812970819!2d13.540590504994018!3d47.534564578415655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4771366f6e414663%3A0x16c165596a26c1ad!2sHallstatt%2C%20Austria!5e0!3m2!1sit!2sit!4v1672057178060!5m2!1sit!2sit"></iframe>
+		</div>
+		<br><hr><br>
+		<div class="container bg-light contatti" style="width: 50vw;">
+			<h1 class="display-4 pt-3">Come contattarci</h1>
+			<div class="row bg-dark m-auto" style="width: 30vw; border-radius: 10px;">
+				<i class="bi bi-envelope" onmouseover="mostra('email')"></i>
+				<h1 class="h4 opacity-0" id="email">hallstatt@turismo.com</h1>
+			</div><br>
+			<div class="row bg-dark m-auto" style="width: 25vw; border-radius: 10px;">
+				<i class="bi bi-telephone" onmouseover="mostra('tel')"></i>
+				<h1 class="h4 opacity-0" id="tel">+43 699 10483024</h1>
+			</div><br>
+			<div class="row bg-dark m-auto" style="width: 40vw; border-radius: 10px;">
+				<i class="bi bi-geo" onmouseover="mostra('indirizzo')"></i>
+				<h1 class="h4 opacity-0" id="indirizzo">Dr.-Friedrich-Morton-Weg 24, 4830 Hallstatt, Austria</h1>
+			</div><br>
+			<div class="row bg-dark m-auto" style="width: 25vw; border-radius: 10px;">
+				<h1 class="h3 text-light" onmouseover="mostra('checkIn')">Check in</h1>
+				<h1 class="h4 opacity-0" id="checkIn">14:00</h1>
+			</div><br>
+			<div class="row bg-dark m-auto" style="width: 25vw; border-radius: 10px;">
+				<h1 class="h3 text-light" onmouseover="mostra('checkOut')">Check out</h1>
+				<h1 class="h4 opacity-0" id="checkOut">9:00</h1>
+			</div><br>
+		</div>
+		<br><br>
+		<!-- Footer -->
+		<footer class="text-center">
+			<div class="container">
+				<a class="btn btn-link btn-lg" href="https://www.facebook.com/hallstattinfo/" target="_blank"><i class="bi bi-facebook"></i></a>
+				<a class="btn btn-link btn-lg" href="https://twitter.com/visithallstatt" target="_blank"><i class="bi bi-twitter"></i></a>
+				<a class="btn btn-link btn-lg" href="https://www.google.com/search?q=hallstatt" target="_blank"><i class="bi bi-google"></i></a>
+				<a class="btn btn-link btn-lg" href="https://www.instagram.com/visithallstatt/" target="_blank"><i class="bi bi-instagram"></i></a>
+			</div>
+			<hr class="fineFooter">
+			<div class="text-center text-white p-1">
+			  <p class="h6" style="font-weight: 300;">© Daniele Nuzzaci 2022</p>
+			</div>
+		</footer>
+		<!-- Fine footer -->
+
+		<script>
+			document.getElementById("mainNav").classList.add("bg-dark");
+			document.getElementById("navbar").classList.add("sposta");
+			document.getElementById("titoloContainer").className = "riduci";
+
+			function mostra(id){
+				document.getElementById(id).classList.replace("opacity-0", "mostra");
+			}
+		</script>
+	</body>
+</html>
