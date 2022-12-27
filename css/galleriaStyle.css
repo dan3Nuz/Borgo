@@ -31,6 +31,15 @@ img{
 	.navbar-toggler{
 		transform: translateY(-18vh);
 	}
+	#navbar{
+		transform: translateY(-65vh);
+	}
+	#titolo{
+		font-size: 7vh;
+	}
+	#titoloContainer{
+		margin-left: -4vh;
+	}
 }
 .blocco{
 	position: relative;

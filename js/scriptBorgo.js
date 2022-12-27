@@ -8,23 +8,23 @@ document.getElementById("p1").classList.replace("rimpicciolisci", "ingrandisci")
 
 window.addEventListener("scroll", function(){
 	if (scrollY < altezza)
-		attiva(1);
+		attiva(0);
 	else if ((scrollY >= altezza) && (scrollY < altezza * 2))
-		attiva(2);
+		attiva(1);
 	else if ((scrollY >= altezza * 2) && (scrollY < altezza * 3))
-		attiva(3);
+		attiva(2);
 	else if ((scrollY >= altezza * 3) && (scrollY < altezza * 4))
-		attiva(4);
+		attiva(3);
 	else if ((scrollY >= altezza * 4) && (scrollY < altezza * 5))
+		attiva(4);
+	else if (scrollY >= altezza * 5)
 		attiva(5);
-	else if ((scrollY >= altezza * 5) && (scrollY < altezza * 6))
-		attiva(6);
 });
 
 function attiva(n) {
 	var i;
-	for (i = 0; i < 6; i++){
-		if (i != n-1) 
+	for (i = 0; i < punti.length; i++){
+		if (i != n) 
 			punti[i].replace("ingrandisci", "rimpicciolisci");
 		else
 			punti[i].replace("rimpicciolisci", "ingrandisci");

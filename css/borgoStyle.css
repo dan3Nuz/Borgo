@@ -21,6 +21,9 @@ section{
 hr{
 	border: 3px solid rgb(33, 37, 41);
 }
+.h5{
+	font-size: 2.3vh;
+}
 ::-webkit-scrollbar {
 	  width: 0px;
 }
@@ -44,4 +47,12 @@ hr{
 .rimpicciolisci{
 	font-size: 1rem;
 	transition: 500ms linear;
+}
+#navbar{
+	transform: translateX(-5rem);
+}
+@media screen and (max-width: 1411px){
+	#pallini{
+		display: none;
+	}
 }
